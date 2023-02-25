@@ -1,13 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  font-family: "Pacifico", cursive, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.todolist ul {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.input {
+  text-align: center;
+}
+
+.form input,
+button {
+  border-radius: 5px;
+}
+
+.form input {
+  background-color: #ff000030;
+}
+
+.form button {
+  background-color: #ff0000a6;
+}
+
+.form button:hover {
+  cursor: pointer;
+}
+
+.todolist {
+  height: 50vh;
+  width: 50vh;
+}
+
+.todolist ul {
+  padding: 0;
+}
+
+.todolist ul li {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+  padding: 5px;
+
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.todolist ul li:hover {
+  cursor: pointer;
+}
+
+.todolist ul li button:hover {
+  cursor: pointer;
 }
